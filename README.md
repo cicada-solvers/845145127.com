@@ -2,9 +2,9 @@
 
 ## Introduction
 `845145127.com` had three different versions:
-* a page with a countdown
-* a page containing the coordinates
-* a page having a whitespace message
+* a page with a countdown: [1 minute coutdown](https://cicada-solvers.github.io/845145127.com/countdown_reenactment/), [original countdown](https://cicada-solvers.github.io/845145127.com/countdown/)
+* a page containing the coordinates: [reenactment](https://cicada-solvers.github.io/845145127.com/coordinates/)
+* a page having a whitespace message: [reenactment](https://cicada-solvers.github.io/845145127.com/whitespace_message/)
 
 For some versions, only a partial archive is available. We proceed to sort out and clean these archives.
 
