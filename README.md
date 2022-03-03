@@ -68,7 +68,7 @@ Assets:
 ```
 
 Assets:
-* [`cicada.jpg`]()
+* [`cicada.jpg`](/cicada.jpg)
 
 ### Third version - the whitespace message
 ```html
