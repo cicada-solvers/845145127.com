@@ -37,7 +37,7 @@ FinishMessage = "Reload this page.";
 ```
 
 Assets:
-* `cicada.jpg`: **lost**
+* [`cicada-lost.jpg`](cicada-lost.jpg)
 
 ### Second version - the coordinates site
 ```html
