@@ -37,7 +37,7 @@ FinishMessage = "Reload this page.";
 ```
 
 Assets:
-* `cicada.jpg`: **lost**
+* [`cicada.jpg`](countdown/cicada.jpg)
 
 ### Second version - the coordinates site
 ```html
@@ -68,7 +68,7 @@ Assets:
 ```
 
 Assets:
-* [`cicada.jpg`](/cicada.jpg)
+* [`cicada.jpg`](coordinates/cicada.jpg)
 
 ### Third version - the whitespace message
 ```html
