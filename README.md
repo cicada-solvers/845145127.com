@@ -109,8 +109,60 @@ Assets:
 ## Details
 
 ### Other ports
+An [archived Nmap scan](https://pastebin.com/HhCUhKCs) of `845145127.com` reveals that several ports were also opened:
+```
+nmap -v -O 845145127.com
+```
+```
+Starting Nmap 5.21 ( http://nmap.org ) at 2012-01-09 19:17 EST
+Initiating Ping Scan at 19:17
+Scanning 845145127.com (75.119.203.244) [4 ports]
+Completed Ping Scan at 19:17, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 19:17
+Completed Parallel DNS resolution of 1 host. at 19:17, 0.11s elapsed
+Initiating SYN Stealth Scan at 19:17
+Scanning 845145127.com (75.119.203.244) [1000 ports]
+Discovered open port 22/tcp on 75.119.203.244
+Discovered open port 80/tcp on 75.119.203.244
+Discovered open port 21/tcp on 75.119.203.244
+Increasing send delay for 75.119.203.244 from 0 to 5 due to max_successful_tryno increase to 4
+Completed SYN Stealth Scan at 19:18, 22.72s elapsed (1000 total ports)
+Initiating OS detection (try #1) against 845145127.com (75.119.203.244)
+Retrying OS detection (try #2) against 845145127.com (75.119.203.244)
+Nmap scan report for 845145127.com (75.119.203.244)
+Host is up (0.086s latency).
+Not shown: 989 closed ports
+PORT STATE SERVICE
+21/tcp open ftp
+22/tcp open ssh
+23/tcp filtered telnet
+25/tcp filtered smtp
+80/tcp open http
+111/tcp filtered rpcbind
+135/tcp filtered msrpc
+139/tcp filtered netbios-ssn
+445/tcp filtered microsoft-ds
+1030/tcp filtered iad1
+5666/tcp filtered nrpe
+OS fingerprint not ideal because: Host distance (15 network hops) is greater than five
+No OS matches for host
+Network Distance: 15 hops
+ 
+Read data files from: /usr/share/nmap
+OS detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 27.70 seconds
+Raw packets sent: 1365 (62.744KB) | Rcvd: 1134 (46.448KB)
+```
+
 The existence of an FTP server can be confirmed: https://pastebin.com/q4s2Jkfe, https://warosu.org/sci/thread/4229423, https://hackforums.net/showthread.php?tid=2100188
-References to an SSH port, a "XMPP client" and a "S2S server" are also sometimes be found.
+
+Erroneous references to the ports of an "XMPP client" and a "S2S server" can also sometimes be found.
+
+### IP address and DNS 
+
+`845145127.com` had the IP address `75.119.203.244`.
+
+During the puzzle, sometimes after the site content got changed to be whitespaces, its DNS record was updated to point to `127.0.0.1` (`localhost`). Solvers could still reach it by entering the server's IP directly. *Sources: [1](https://irclogs.ubuntu.com/2012/01/11/%23ubuntu.html), [2](https://clevcode.org/cicada-3301/)*, *[3](https://web.archive.org/web/20160814151608/http://bernsteinbear.com/blog/cicada/)*
 
 ### First version - the countdown
 Original archive: [4chan thread](https://warosu.org/sci/thread/4229423) *(no other archive is known)*
